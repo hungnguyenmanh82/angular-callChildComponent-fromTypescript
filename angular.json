@@ -123,6 +123,15 @@
           }
         }
       }
-    }},
-  "defaultProject": "a13-childComponent-fromTypescript"
+    }
+  },
+  "defaultProject": "a13-childComponent-fromTypescript",
+  "cli": {
+    "analytics": "1f90cfc8-e282-432d-8d99-6edd221493fd"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
