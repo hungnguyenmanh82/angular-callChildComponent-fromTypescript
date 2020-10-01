@@ -1,5 +1,26 @@
-<button (click)="countClick1()" class="button1"> child component 1</button>
-<button (click)="countClick2()" class="button2"> child component 2</button>
+<h1>call child Component from TypeScript</h1>
+<p style="color: red">
+  + Ko nên gọi child Component từ Parent TypeScript=> code sẽ rất khó đọc và maintain
+  <br />
+  + nên gọi child Component từ Parent html template
+  <br />
+  + nên dùng @input[]/ @output () => như thế code html rất dễ đọc
+</p>
+<a href="https://angular.io/guide/template-reference-variables"
+  >https://angular.io/guide/template-reference-variables</a
+>
+
+<p>&lt;tag #variable&gt; =&gt; biến đại diện cho tag. Tag có thể là Component hoặc html chuẩn</p>
+<p>
+  &lt;tag #variable= &ldquo;directive&rdquo;&gt; =&gt; biến đại diện cho directive.
+  <br />
+  Directive này cung cấp nhiều properties cho tag này.
+  <br />
+  Để có thể can thiệp vào tag này nhiều hơn. Material design dùng rất nhiều cách này
+</p>
+
+<button (click)="countClick1()" class="button1">child component 1</button>
+<button (click)="countClick2()" class="button2">child component 2</button>
 
 <!-- #childComponent1 là tên instant se đc gọi ở html or *.ts parent -->
 <app-child-component #childComponent1></app-child-component>
