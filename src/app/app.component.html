@@ -22,6 +22,9 @@
 <button (click)="countClick1()" class="button1">child component 1</button>
 <button (click)="countClick2()" class="button2">child component 2</button>
 
+<button (click)="countClick3(childComponent3)" class="button2">child component 3</button>
+
 <!-- #childComponent1 là tên instant se đc gọi ở html or *.ts parent -->
 <app-child-component #childComponent1></app-child-component>
 <app-child-component #childComponent2></app-child-component>
+<app-child-component #childComponent3></app-child-component>
